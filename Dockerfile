@@ -11,6 +11,4 @@ COPY ./app/pyproject.toml ./app/poetry.lock* /app/
 
 RUN poetry install --no-root --no-dev
 
-RUN pip freeze
-
 COPY ./app /app
